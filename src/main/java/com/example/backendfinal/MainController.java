@@ -11,7 +11,9 @@ public class MainController {
     @GetMapping("/")
     @ResponseBody
     public String main() {
-        return "<a href=\"https://google.com\">Google</a>";
+        String html = "<a href=\"https://google.com\">Google</a><br>";
+        html += "<a href=\"https://11st.co.kr\">11st.co.kr</a><br>";
+        return html;
     }
 
     @PostMapping("/")
